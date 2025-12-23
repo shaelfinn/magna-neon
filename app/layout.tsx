@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AuthProvider from "@/components/auth/auth-provider";
 
 export const metadata: Metadata = {
   title: "Magna Coders - Build. Collaborate. Solve.",
@@ -56,7 +55,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <AuthProvider>{children}</AuthProvider>
+        {children}
       </body>
     </html>
   );

@@ -10,9 +10,6 @@ I'm Gonna write a description here. 👊
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) with [shadcn/ui](https://ui.shadcn.com/) components
 - **Database**: [Neon Postgres](https://neon.tech/) (serverless Postgres)
 - **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
-- **Authentication**: [Auth.js](https://authjs.dev/) (Auth.js v5) with Credentials and GitHub OAuth providers
-- **IP Geolocation**: [IPInfo](https://ipinfo.io/) for country detection during signup
-- **Password Security**: [bcryptjs](https://www.npmjs.com/package/bcryptjs) for password hashing
 - **Validation**: [Zod](https://zod.dev/) for form and API validation
 
 ## Getting Started
@@ -42,10 +39,6 @@ I'm Gonna write a description here. 👊
 
 2. Edit the `.env` file with your credentials (see [.env.example](.env.example) for details):
    - `DATABASE_URL` - Postgres connection URL for Neon
-   - `AUTH_SECRET` - Secret for Auth.js sessions (generate with `npx auth secret`)
-   - `GITHUB_CLIENT_ID` - GitHub OAuth App Client ID
-   - `GITHUB_CLIENT_SECRET` - GitHub OAuth App Client Secret
-   - `IPINFO_TOKEN` - Token for IP geolocation
 
 > **Note:** Both `.env` and `.env.local` are required because Drizzle’s migration tooling does not fully support `.env.local` on its own.
 
@@ -70,17 +63,6 @@ This project uses Drizzle ORM with Neon Postgres. After installing dependencies 
    npx drizzle-kit studio
    ```
 
-### GitHub OAuth Setup (Optional)
-
-To enable GitHub authentication:
-
-1. Go to [GitHub Developer Settings](https://github.com/settings/applications/new)
-2. Create a new OAuth App with:
-   - Application name: `Magna Coders`
-   - Homepage URL: `http://localhost:3000`
-   - Authorization callback URL: `http://localhost:3000/api/auth/callback/github`
-3. Copy the Client ID and Client Secret to your `.env` file
-
 ### Running the Application
 
 Run the development server:
@@ -103,12 +85,9 @@ npm start
 
 ## Key Features
 
-- User authentication with email/password and GitHub OAuth
-- Account linking system (GitHub users can add password later)
-- Country detection during signup using IP geolocation
 - Responsive UI components with shadcn/ui
-- Server actions for secure data handling
 - PostgreSQL database with Drizzle ORM
+- Server-side rendering with Next.js App Router
 
 ## Learn More
 
