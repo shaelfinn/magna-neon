@@ -22,6 +22,20 @@
       "when": 1758972800564,
       "tag": "0002_slimy_cerebro",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1766518437733,
+      "tag": "0003_stiff_marauders",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1766520177636,
+      "tag": "0004_lazy_makkari",
+      "breakpoints": true
     }
   ]
 }

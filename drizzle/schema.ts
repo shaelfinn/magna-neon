@@ -1,19 +1,22 @@
-export * from "./schema/enums"; // export this first
-
+// Export enums first
+export * from "./schema/enums";
+// Export all domain tables and types
 export * from "./schema/users";
-export * from "./schema/accounts";
-export * from "./schema/sessions";
-//add other tables here as you create them
+export * from "./schema/social";
+// Export relations
+export * from "./relations";
+// Import tables for schema object
+import { users, followers } from "./schema/users";
+import { posts, comments, likes, bookmarks } from "./schema/social";
 
-import { users } from "./schema/users";
-import { accounts } from "./schema/accounts";
-import { sessions } from "./schema/sessions";
-// add other tables here as you create them
-
-// schema object for Drizzle CLI and queryClient usage
+// Schema object.
 export const schema = {
+  // users
   users,
-  accounts,
-  sessions,
-  // add other tables here as you create them
+  followers,
+  // social
+  posts,
+  comments,
+  likes,
+  bookmarks,
 };
