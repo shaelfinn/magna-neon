@@ -6,11 +6,11 @@ I'm Gonna write a description here. 👊
 
 ## Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) with App Router and React Server Components
+- **Framework**: [Next.js 16](https://nextjs.org/) with App Router and React Server Components
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) with [shadcn/ui](https://ui.shadcn.com/) components
 - **Database**: [Neon Postgres](https://neon.tech/) (serverless Postgres)
 - **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
-- **Authentication**: [Auth.js](https://authjs.dev/) (NextAuth v5) with Credentials and GitHub OAuth providers
+- **Authentication**: [Auth.js](https://authjs.dev/) (Auth.js v5) with Credentials and GitHub OAuth providers
 - **IP Geolocation**: [IPInfo](https://ipinfo.io/) for country detection during signup
 - **Password Security**: [bcryptjs](https://www.npmjs.com/package/bcryptjs) for password hashing
 - **Validation**: [Zod](https://zod.dev/) for form and API validation

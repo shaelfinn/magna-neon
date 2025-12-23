@@ -28,7 +28,7 @@ const createError = (msg: string, status = 401) =>
   NextResponse.json({ error: msg }, { status });
 
 // middleware function
-export default async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const ua = req.headers.get("user-agent") || "";
   const crawlerPattern =
